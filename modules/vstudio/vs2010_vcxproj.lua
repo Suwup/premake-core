@@ -1041,6 +1041,23 @@
 		end
 	}
 
+---
+-- Library group
+---
+	m.categories.Library = {
+		name       = "Library",
+		extensions = { ".a" },
+		priority   = 12,
+
+		emitFiles = function(prj, group)
+			m.emitFiles(prj, group, "Library", {m.generatedFile})
+		end,
+
+		emitFilter = function(prj, group)
+			m.filterGroup(prj, group, "Library")
+		end
+	}
+
 
 ---
 -- Categorize files into groups.
