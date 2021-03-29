@@ -1046,7 +1046,7 @@
 ---
 	m.categories.Library = {
 		name       = "Library",
-		extensions = { ".a" },
+		extensions = { ".a", ".lib" },
 		priority   = 12,
 
 		emitFiles = function(prj, group)
