@@ -633,10 +633,11 @@ end)
 
 --
 -- Disable override of OutDir.  This is breaking deployment.
+-- Edit: Seems to work perfectly fine?
 --
 
-	p.override(vc2010, "outDir", function(oldfn, cfg)
-		if cfg.system ~= p.ANDROID then
-			return oldfn(cfg)
-		end
-	end)
+--	p.override(vc2010, "outDir", function(oldfn, cfg)
+--		if cfg.system ~= p.ANDROID then
+--			return oldfn(cfg)
+--		end
+--	end)
